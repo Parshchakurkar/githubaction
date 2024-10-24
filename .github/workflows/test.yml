@@ -1,0 +1,14 @@
+name: CI run
+on: 
+  workflow_dispatch:
+jobs:
+  job:
+    name: print
+    runs-on: windows-latest
+    steps:
+      - name: PowerShell script
+        uses: Amadevus/pwsh-script@v2.0.3
+        with:
+          script: 
+            write-host "Hello world"
+          
