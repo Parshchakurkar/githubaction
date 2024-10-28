@@ -11,4 +11,18 @@ jobs:
         with:
           script: 
             write-host "Hello world"
+  job2:
+    name: print2
+    runs-on: windows-latest
+    steps:
+      - name: PowerShell script
+        uses: Amadevus/pwsh-script@v2.0.3
+        with:
+          # PowerShell script to execute in Actions-hydrated context
+          script: 
+            write-host "Hello world2"
+          
+              
+    
+    
           
