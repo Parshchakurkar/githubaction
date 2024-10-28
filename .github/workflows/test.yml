@@ -14,6 +14,7 @@ jobs:
   job2:
     name: print2
     runs-on: windows-latest
+    needs: job
     steps:
       - name: PowerShell script
         uses: Amadevus/pwsh-script@v2.0.3
